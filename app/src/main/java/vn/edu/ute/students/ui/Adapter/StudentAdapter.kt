@@ -40,7 +40,7 @@ class StudentAdapter(
             binding.tvStudentCode.text = "MSSV: ${student.studentCode}"
             binding.tvEmail.text = student.email
             binding.tvGpa.text = "GPA: ${String.format(Locale.US, "%.2f", student.gpa)}"
-            binding.tvAvatar.text = student.fullName.trim().take(1).uppercase().ifEmpty { "?" }
+            binding.tvAvt.text = student.fullName.trim().take(1).uppercase().ifEmpty { "?" }
 
             binding.root.setOnClickListener { onStudentClick(student) }
             binding.btnDelete.setOnClickListener { onDeleteClick(student) }

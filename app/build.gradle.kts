@@ -33,6 +33,10 @@ android {
     }
 }
 
+kotlin {
+    jvmToolchain(11)
+}
+
 dependencies {
     // UI Core & Material Design
     implementation(libs.androidx.core.ktx)
